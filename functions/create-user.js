@@ -1,3 +1,3 @@
-module.exports = function() {
-  
+module.exports = (req, res) => {
+  res.json(req.body);
 }
