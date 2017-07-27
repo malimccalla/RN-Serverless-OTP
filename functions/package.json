@@ -1,6 +1,9 @@
 {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "start": "firebase serve --only functions --project one-time-password-6064"
+  },
   "dependencies": {
     "firebase-admin": "~4.2.1",
     "firebase-functions": "^0.5.7"
