@@ -17,7 +17,7 @@ module.exports = (req, res) => {
         to: phone,
         from: '+442033224658'
       }, (err) => {
-        if (err) { return res.status(422).send({ err: error }); }
+        if (err) { return res.status(422).send({ err: err }); }
 
         admin.database().ref(`users/${phone}`)
           .update({ code, codeValid: true }, () => {
